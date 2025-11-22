@@ -1,2 +1,2 @@
 # weather-project
-Thsi is weather-webApplication ther we can see weather and forecasting.
+Thsi is weather-webApplication there we can see weather and forecasting.

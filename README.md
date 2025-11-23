@@ -1,4 +1,4 @@
-🌦️ Weather Forecast App
+# 🌦️ Weather Forecast App
 
 A modern full‑stack weather application built using Spring Boot (backend) and HTML/CSS/JavaScript (frontend). Users can fetch real‑time weather details such as city, region, country, temperature, and multi‑day forecasts.
 

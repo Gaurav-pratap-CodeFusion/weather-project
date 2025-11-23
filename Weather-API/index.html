@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Weather Forecast</h1>
+            <p>Get accurate weather information for any city</p>
+        </header>
+
+        <div class="search-container">
+            <div class="input-group">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="Enter city name">
+            </div>
+            <div class="input-group">
+                <label for="days">Days</label>
+                <select id="days">
+                    <option value="1">1 Day</option>
+                    <option value="2">2 Days</option>
+                    <option value="3">3 Days</option>
+                </select>
+            </div>
+            <button id="get-weather">Get Forecast</button>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p>Fetching weather data...</p>
+        </div>
+
+        <div class="error-message" id="error-message"></div>
+
+        <div class="weather-container">
+            <div class="current-weather">
+                <div class="empty-state" id="current-empty">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="#BDBDBD"/>
+                        <path d="M12 6C8.69 6 6 8.69 6 12C6 15.31 8.69 18 12 18C15.31 18 18 15.31 18 12C18 8.69 15.31 6 12 6Z" fill="#E0E0E0"/>
+                        <path d="M12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4Z" fill="#9E9E9E"/>
+                    </svg>
+                    <p>Enter a city to see current weather</p>
+                </div>
+                <div class="location" id="location-info" style="display: none;">
+                    <h2 id="city-name"></h2>
+                    <p id="region-country"></p>
+                </div>
+                <div class="weather-condition" id="weather-info" style="display: none;">
+                    <div class="condition-icon" id="condition-icon">
+                        <!-- SVG will be inserted here dynamically -->
+                    </div>
+                    <div class="condition-text">
+                        <p id="condition"></p>
+                        <p class="temperature" id="temperature"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-container">
+                <h3>Daily Forecast</h3>
+                <div class="forecast-list" id="forecast-list">
+                    <div class="empty-state">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 14C8 14 9 16 12 16C15 16 16 14 16 14M12 4V2M16 6.5L17.5 5M6 6.5L4.5 5M18 12H20M4 12H6" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 15C7 15 8 17 11 17C14 17 15 15 15 15" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 20V22M16 18.5L17.5 20M6 18.5L4.5 20" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <p>Select a city to see forecast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

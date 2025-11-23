@@ -24,19 +24,19 @@ A modern full‑stack weather application built using Spring Boot (backend) and 
 
 ### Backend:
 
-Java 17+
+  Java 17+
 
-Spring Boot
+  Spring Boot
 
-REST API
+  REST API
 
 ### Frontend:
 
-HTML5
+  HTML
 
-CSS3
+  CSS
 
-Vanilla JavaScript
+  Vanilla JavaScript
 
 External API:
 

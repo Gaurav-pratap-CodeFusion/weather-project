@@ -16,20 +16,8 @@ A modern full‑stack weather application built using Spring Boot (backend) and 
 
 🔐 Environment‑based API key security
 
-🗂️ Project Structure
+<img width="781" height="402" alt="Screenshot 2025-11-23 144200" src="https://github.com/user-attachments/assets/6b695239-c28a-450c-8b5e-c7e3de2c3521" />
 
-weather-project/
-│
-├── weather-APP/               # Spring Boot Weather API
-│   ├── src/main/java
-│   ├── src/main/resources
-│   ├── pom.xml
-│   └── ...
-│
-└── weather-UI/              # HTML / CSS / JS UI
-    ├── index.html
-    ├── style.css
-    └── script.js
 
 🛠️ Tech Stack
 

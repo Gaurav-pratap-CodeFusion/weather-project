@@ -22,21 +22,21 @@ A modern full‑stack weather application built using Spring Boot (backend) and 
 
 ## 🛠️ Tech Stack
 
-### Backend:
+### **Backend:**
 
-  Java 17+
+  1. Java 17+
 
-  Spring Boot
+  2. Spring Boot
 
-  REST API
+  3. REST API
 
-### Frontend:
+### **Frontend:**
 
-  HTML
+  1. HTML
 
-  CSS
+  2. CSS
 
-  Vanilla JavaScript
+  3. Vanilla JavaScript
 
 External API:
 
